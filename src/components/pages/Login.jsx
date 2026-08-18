@@ -1,5 +1,5 @@
 import AuthCard from "../auth/AuthCard";
-
+import { Link } from "react-router-dom";
 const Login = () => {
   return (
     <AuthCard>
@@ -81,12 +81,13 @@ const Login = () => {
 
       <p className="mt-6 text-center text-sm text-gray-600">
         Don't have an account?{" "}
-        <button
+        <Link
+        to='/register'
           type="button"
           className="font-semibold text-gray-900 hover:underline"
         >
           Create account
-        </button>
+        </Link>
       </p>
     </AuthCard>
   );

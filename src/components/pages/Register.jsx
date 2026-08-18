@@ -1,4 +1,5 @@
 import AuthCard from "../auth/AuthCard";
+import { Link } from "react-router-dom";
 
 const Register = () => {
   return (
@@ -135,12 +136,12 @@ const Register = () => {
       {/* Login link */}
       <p className="mt-6 text-center text-sm text-gray-600">
         Already have an account?{" "}
-        <button
-          type="button"
+        <Link
+          to='/login'
           className="font-semibold text-gray-900 hover:underline"
         >
           Sign in
-        </button>
+        </Link>
       </p>
     </AuthCard>
   );
